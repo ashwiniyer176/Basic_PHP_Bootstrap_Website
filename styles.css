@@ -24,7 +24,7 @@ a:hover{
 
 img {
     border-radius: 1cm;
-    height: 500px;
+    height: 400px;
     width: 500px;
 }
 
@@ -38,7 +38,6 @@ th {
 }
 
 .container{
-    /* background-color: aqua; */
     margin-top:7%;
     border: 3px solid #ddd;
     width: 500px;
@@ -46,7 +45,6 @@ th {
     border-radius: 25px;
 }
 .container-lg{
-    background-color: aqua;
     margin: 5%;
 }
 
