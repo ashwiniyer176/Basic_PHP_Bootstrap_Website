@@ -45,10 +45,11 @@ th {
     box-shadow: 500px black;
     border-radius: 25px;
 }
-
-.table{
+.container-lg{
+    background-color: aqua;
     margin: 5%;
 }
+
 
 
 .center-element{

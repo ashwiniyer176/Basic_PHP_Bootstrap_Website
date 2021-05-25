@@ -25,14 +25,16 @@ function verifyCredentials($tableName, $dbName)
     $result = $connection->query($sql);
 
     if ($result->num_rows > 0) {
-        // output data of each row
-        while ($row = $result->fetch_assoc()) {
-            echo "<br>id: " . $row["id"] . " - Name: " . $row["fullname"] . "<br>";
-        }
+        session_start();
+        $_SESSION = $_POST;
+        // echo "<br>" . $_SESSION['Email'];
+        session_write_close();
+        header("Location: http://localhost/Basic_PHP_Bootstrap_Website/Results.php");
     } else {
         echo "0 results";
         header("Location: http://localhost/ELearning_Website_Bootstrap/Register.html");
     }
+
     $connection->close();
 }
 
